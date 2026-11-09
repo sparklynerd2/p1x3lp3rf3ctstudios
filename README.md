@@ -39,6 +39,17 @@ app's Google Play listing (Privacy policy and Data deletion fields).
 The form doesn't send anything to this website. It opens the visitor's email app
 with a deletion request addressed to that app's support email, so no backend is needed.
 
+## Gem Coloring pack admin (`/gem-coloring/admin/`)
+
+The page for uploading picture packs to Diamond Painting: Gem Coloring. It isn't
+linked from anywhere and is hidden from search engines. Only the admin accounts
+listed in that app's repo can sign in and change anything.
+
+It's built in the app's repo (`diamond-pixelations-android`, see `admin/README.md`
+there), not here, because it shares the app's code and Firebase setup. After
+rebuilding it there, replace `public/gem-coloring/admin/` with the new
+`build-admin/` output. Its relaxed security headers are in `public/_headers`.
+
 ## Contact addresses
 
 | App | Email |
