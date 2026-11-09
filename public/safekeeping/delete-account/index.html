@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Account · Safekeeping</title>
+<meta name="description" content="Request deletion of your Safekeeping account and data.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<style>:root{--accent:#a16207}@media (prefers-color-scheme: dark){:root{--accent:#fde047}}</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="/"><svg class="logo" viewBox="0 0 7 7" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="5" height="1"/><rect x="0" y="1" width="1" height="6"/><rect x="4" y="1" width="1" height="3"/><rect x="1" y="3" width="3" height="1"/><rect class="logo-dot" x="6" y="6" width="1" height="1"/></svg><span>P1x3l P3rf3ct Studios</span></a>
+  <nav class="topnav" aria-label="Main"><a href="/#apps">Apps</a><a href="/#contact">Contact</a></nav>
+</div></header>
+<nav class="subnav" aria-label="Safekeeping pages"><div class="wrap"><a class="subnav-app" href="/safekeeping/"><img src="/assets/icons/safekeeping.png" alt="" width="24" height="24">Safekeeping</a><div class="subnav-links"><a href="/safekeeping/">Overview</a><a href="/safekeeping/privacy/">Privacy</a><a href="/safekeeping/terms/">Terms</a><a href="/safekeeping/delete-account/" aria-current="page">Delete account</a></div></div></nav>
+<main id="main">
+<div class="doc-hero"><div class="wrap narrow"><p class="eyebrow">Safekeeping</p>
+<h1>Delete your data</h1>
+<p class="updated">Applies to the Android app Safekeeping (com.safekeeping.app) &middot; Last updated: November 9, 2026</p>
+<div class="lead"><p>Safekeeping has no sign-up accounts: your passwords live encrypted on your phone, and our
+server holds only the few things listed in our <a href="/safekeeping/privacy/">privacy policy</a>. Here's how to
+delete them.</p></div></div></div>
+<div class="wrap narrow doc">
+<section><h2>The quickest way: in the app</h2><ol class="steps">
+<li>Open Safekeeping and tap <strong>Settings</strong>.</li>
+<li>Scroll to <strong>If something happens to me</strong> and tap <strong>Delete all my passwords</strong>.</li>
+<li>Enter your main password, then type <strong>DELETE</strong>.</li></ol>
+<p>For your safety this happens 7 days later and can be cancelled until then. It deletes everything on your
+phone, your cloud backup copies, your private email account (all addresses and your stored real email) and your
+safety contacts.</p></section>
+<section><h2>Deleting just one part</h2><ul>
+<li><strong>Cloud backup:</strong> Settings &rsaquo; Cloud backup: OFF (after the 7-day wait).</li>
+<li><strong>A private email address:</strong> delete it on the Private Email tab. It's removed straight away.</li>
+<li><strong>A safety contact:</strong> Settings &rsaquo; Safety contacts &rsaquo; Remove.</li>
+<li>A safety contact who no longer wants emails can use the stop link in any email from us.</li></ul></section>
+<section><h2>If you no longer have the app or your phone</h2>
+<p>Nothing on our server is linked to your name, so send a request with the form below and include whichever
+applies:</p><ul>
+<li><strong>Private email account:</strong> one of your private addresses. We'll email the inbox it forwards to
+and ask you to confirm, then delete the account and all its addresses.</li>
+<li><strong>Safety contact:</strong> the contact's email address, and we'll remove them.</li>
+<li><strong>Cloud backup:</strong> backups aren't linked to any name or email, so we can't find yours without
+your recovery key. If you have it, install Safekeeping, choose <em>I'm moving from another phone</em>, restore
+the backup and then delete it as above. Otherwise, it's deleted automatically after 2 years without updates, and
+stays locked the whole time.</li></ul></section>
+<section><h2>What isn't deleted</h2><ul>
+<li><strong>Purchase records:</strong> scrambled (hashed) receipt codes and check results are kept for up to
+12 months after a purchase ends, to handle refunds and prevent fraud. They contain no name, email or payment
+details. Google Play keeps your purchase history.</li>
+<li><strong>Short-lived records:</strong> daily anti-abuse counts are deleted the next day; providers'
+technical logs within 30 days.</li>
+<li><strong>Copies you made yourself</strong>, such as an Android backup or a file in Google Drive, are managed in
+those services.</li></ul></section>
+<section id="request"><h2>Request deletion</h2>
+<form class="delete-form" data-email="support@safekeepingvault.app" data-app="Safekeeping" data-pkg="com.safekeeping.app" novalidate>
+  <label for="ident">Private email address or safety contact's email</label>
+  <input id="ident" name="ident" type="email" autocomplete="email" required aria-describedby="ident-help">
+  <p class="help" id="ident-help">So we can find the data. We'll email you to confirm before deleting anything.</p>
+  <label for="method">What would you like deleted?</label>
+  <select id="method" name="method"><option>Private email account</option><option>Safety contact</option><option>Other</option></select>
+  <label for="note">Anything else we should know? <span class="muted">(optional)</span></label>
+  <textarea id="note" name="note" rows="3"></textarea>
+  <label class="check"><input type="checkbox" id="confirm" name="confirm" required>
+  <span>I understand deletion is permanent and my data can't be recovered.</span></label>
+  <p class="form-error" role="alert" hidden></p>
+  <button type="submit" class="btn">Create deletion email</button>
+  <p class="help">This opens your email app with the request filled in. Nothing is sent until you press send.</p>
+</form>
+<p class="fallback">Prefer to write it yourself? Email <a href="mailto:support@safekeepingvault.app?subject=Delete%20my%20Safekeeping%20account">support@safekeepingvault.app</a> with the subject
+<strong>Delete my Safekeeping account</strong>.</p>
+</section>
+<p class="muted">See also our <a href="/safekeeping/privacy/">Privacy Policy</a>.</p></div>
+</main>
+<footer class="site-footer"><div class="wrap footer-grid">
+  <div><a class="brand" href="/"><svg class="logo" viewBox="0 0 7 7" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="5" height="1"/><rect x="0" y="1" width="1" height="6"/><rect x="4" y="1" width="1" height="3"/><rect x="1" y="3" width="3" height="1"/><rect class="logo-dot" x="6" y="6" width="1" height="1"/></svg><span>P1x3l P3rf3ct Studios</span></a>
+  <p class="muted">Small, thoughtful apps made with care.</p></div>
+  <div><h2>Apps</h2><ul><li><a href="/gem-coloring/">Diamond Painting: Gem Coloring</a></li><li><a href="/taskquests/">TaskQuests Planner &amp; Randomizer</a></li><li><a href="/safekeeping/">Safekeeping</a></li><li><a href="/pattern-maker/">Diamond Painting Pattern Maker</a></li><li><a href="/the-traitor-word/">The Traitor Word</a></li></ul></div>
+  <div><h2>Contact</h2><ul><li><a href="mailto:misspixelatedwebdesign@gmail.com">misspixelatedwebdesign@gmail.com</a></li></ul></div>
+</div><div class="wrap copyright">&copy; 2026 P1x3l P3rf3ct Studios. All rights reserved.</div></footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

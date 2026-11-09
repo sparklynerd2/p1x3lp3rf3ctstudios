@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Safekeeping</title>
+<meta name="description" content="Privacy policy for Safekeeping.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<style>:root{--accent:#a16207}@media (prefers-color-scheme: dark){:root{--accent:#fde047}}</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="/"><svg class="logo" viewBox="0 0 7 7" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="5" height="1"/><rect x="0" y="1" width="1" height="6"/><rect x="4" y="1" width="1" height="3"/><rect x="1" y="3" width="3" height="1"/><rect class="logo-dot" x="6" y="6" width="1" height="1"/></svg><span>P1x3l P3rf3ct Studios</span></a>
+  <nav class="topnav" aria-label="Main"><a href="/#apps">Apps</a><a href="/#contact">Contact</a></nav>
+</div></header>
+<nav class="subnav" aria-label="Safekeeping pages"><div class="wrap"><a class="subnav-app" href="/safekeeping/"><img src="/assets/icons/safekeeping.png" alt="" width="24" height="24">Safekeeping</a><div class="subnav-links"><a href="/safekeeping/">Overview</a><a href="/safekeeping/privacy/" aria-current="page">Privacy</a><a href="/safekeeping/terms/">Terms</a><a href="/safekeeping/delete-account/">Delete account</a></div></div></nav>
+<main id="main">
+<div class="doc-hero"><div class="wrap narrow"><p class="eyebrow">Safekeeping</p><h1>Privacy Policy</h1><p class="updated">Effective and last updated: November 9, 2026</p><p class="lead">This policy explains what information Safekeeping handles, why, and the choices you have. Safekeeping is made by P1x3l P3rf3ct Studios ("we", "us").</p></div></div><div class="wrap narrow doc">
+<aside class="summary"><h2>The short version</h2><ul><li><strong>We can't see your passwords.</strong> They are encrypted on your phone before
+anything is saved or backed up, and we never receive your main password, recovery key or family keys.</li>
+<li><strong>Backups are locked too.</strong> Only your recovery key or a family key can open them.</li>
+<li>No ads, no analytics, no tracking, and we never sell or share your information.</li>
+<li>If you lose your main password, recovery key and every family key, we can't recover your passwords.
+That's the price of nobody else being able to open them.</li></ul></aside>
+<nav class="toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#passwords">Your passwords</a></li><li><a href="#backups">Backups</a></li><li><a href="#biometrics">Fingerprint, face and autofill</a></li><li><a href="#purchases">Purchases</a></li><li><a href="#private-email">Private email addresses (optional)</a></li><li><a href="#safety-contacts">Safety contacts (optional)</a></li><li><a href="#ratings">Ratings</a></li><li><a href="#technical">Technical information</a></li><li><a href="#summary-table">Summary of what we keep</a></li><li><a href="#deleting">Deleting your information</a></li><li><a href="#sharing">Who we share information with</a></li><li><a href="#security">Security</a></li><li><a href="#rights">Your rights</a></li><li><a href="#children">Children</a></li><li><a href="#changes">Changes to this policy</a></li><li><a href="#contact">Contact us</a></li></ol></nav>
+<section id="passwords"><h2><span class="num">1.</span> Your passwords</h2><p>Everything you save in Safekeeping (website and app names,
+usernames, passwords, notes, two-step code setups and backup codes, photos you attach to logins, your recovery
+key and the names of family members you add) is stored inside the app on your phone, encrypted:</p><ul>
+<li>Your information is encrypted with <strong>AES-256-GCM</strong> using a random key.</li>
+<li>That key is locked with your main password (strengthened with <strong>Argon2id</strong>), and separately
+with your recovery key and each family key.</li>
+<li>Your main password, recovery key and family keys are never sent to us or anyone else.</li></ul>
+<p>To set up a two-step code you can scan a QR code. Scanning is done on your phone by Google Play services'
+code scanner: Safekeeping does not get access to your camera or the picture, only the text in the code. If you
+email backup codes to yourself, your own email app sends them; they don't pass through us. Photos you add are
+shrunk on your phone (which removes hidden details such as location) and encrypted before they are saved.</p></section>
+<section id="backups"><h2><span class="num">2.</span> Backups</h2><p>Every backup is a locked copy. Nobody, including us, Google or our service
+providers, can open it without one of your keys.</p>
+<h3>Automatic cloud backup (on unless you switch it off)</h3>
+<p>After you make a change (and at least monthly), the app uploads a locked copy of your vault to our server
+(Google Firebase). This copy can be opened only with your recovery key or a family key, never with your main
+password. It is stored under a code worked out from your key, guarded by a scrambled (hashed) check value, and
+is not linked to your name, email address, phone number or Google account. We also keep the time it was last
+updated and a random code for your phone, so clearing out an old phone doesn't delete the backup a new phone is
+keeping up to date. Locked photos are kept with the backup.</p>
+<p>Copies for a replaced recovery key or removed family member are deleted, as are all copies when you switch
+cloud backup off or use <em>Delete all my passwords</em>. A backup that isn't updated for 2 years is deleted
+automatically.</p>
+<h3>Android's backup to your Google account</h3>
+<p>Your phone can back up the app to your own Google account, only when Android can encrypt it end to end with
+your phone's screen lock. Google runs this backup; we don't receive it.</p>
+<h3>Backup file in Google Drive or another location (optional)</h3>
+<p>If you choose a location in Settings, the app saves the locked file there through Android's file picker. The
+storage app does the uploading; we don't receive the file.</p>
+<h3>Phone screen-lock recovery (optional, off by default)</h3>
+<p>If you turn this on, the key to your vault is stored with Google Play services (Block Store), end-to-end
+encrypted with your phone's PIN, pattern or password, so it can be restored on a new phone. We don't receive
+it. Anyone with both your Google account and your phone's screen lock could use it, which the app explains
+before you turn it on.</p></section>
+<section id="biometrics"><h2><span class="num">3.</span> Fingerprint, face and autofill</h2><p>Fingerprint and face unlock use Android's secure
+biometric system. Your fingerprint or face is checked by your phone and never reaches the app or us; the app
+only learns whether the check passed.</p>
+<p>If you turn on autofill, Android shows Safekeeping the sign-in boxes on screen so it can offer the right
+password. This happens entirely on your phone, and nothing about the apps or websites you use is sent to us.
+Copied passwords are cleared from the clipboard after 30 seconds and marked as sensitive.</p></section>
+<section id="purchases"><h2><span class="num">4.</span> Purchases</h2><p>Plus, Premium, Lifetime, family plans and the private email add-on are
+sold through Google Play. We don't receive your name, email address or payment details. To check that a
+purchase is genuine and hasn't been refunded, the app sends our server the purchase's Google Play receipt code
+(purchase token), the product bought and a random install code created by the app. We check these with Google
+and keep a scrambled (hashed) copy of the receipt code, the result of the check, the install codes that used it
+and Google's list of refunded or cancelled purchases.</p>
+<p><strong>Family plans.</strong> We also keep an encrypted copy of the plan's receipt code so we can check it
+is still paid for on behalf of the people you invite. Invite codes are stored only in scrambled form and expire
+after 7 days. For each member we keep a random ID, a scrambled sign-in code and the date they joined, with no
+names or email addresses. Removing someone, or leaving, deletes their record straight away.</p></section>
+<section id="private-email"><h2><span class="num">5.</span> Private email addresses (optional)</h2><p>If you use private email addresses, we
+keep your real email address (encrypted) so we know where to pass emails on, the private addresses you've made,
+whether each is switched on, how many emails each has passed on, a reference to your purchase, and a
+short-lived confirmation code (scrambled, removed once used). Website names and notes you attach to each
+address stay on your phone.</p>
+<p>When an email arrives for a private address, it is received by Cloudflare, passed to our Google Firebase
+service and sent on to your inbox by Amazon Web Services (Amazon SES). It exists only in memory while this
+happens and is never saved by us; Amazon SES may hold it briefly while retrying delivery. To filter out
+adverts, newsletters and personal mail, our service reads the email's subject and technical headers while
+passing it on, without storing them. We keep daily counts per sending company (scrambled) and a monthly count
+of emails passed on for you, to prevent abuse. If you reply to a passed-on email from your normal inbox, the
+sender will see your real address.</p></section>
+<section id="safety-contacts"><h2><span class="num">6.</span> Safety contacts (optional)</h2><p>You can choose up to five friends or family
+members to get an email if a big change is made in the app, such as many passwords deleted or a family key
+used. If you do, we keep your first name as you typed it, each contact's name and encrypted email address,
+whether they've agreed, and when alerts were sent. Each contact is first asked whether they agree, and every
+email has a link to stop them. These emails never contain passwords and are sent by Amazon SES.</p></section>
+<section id="ratings"><h2><span class="num">7.</span> Ratings</h2><p>After a few days of use, the app may offer Google Play's in-app review. Google
+handles your rating under its own policy; we see only the public review.</p></section>
+<section id="technical"><h2><span class="num">8.</span> Technical information</h2><p>Like any internet service, our providers briefly record
+technical details of requests to our server, such as the time, IP address and whether it succeeded, to keep it
+running and secure. To prevent misuse, our server keeps daily counts of some requests per internet address in
+scrambled (hashed) form, deleted the next day. Our server code never logs backups, receipt codes, email
+addresses or email content.</p>
+<p>The app uses only these Android permissions: internet and network status, fingerprint/face unlock, the
+autofill service (only if you turn it on) and Google Play billing. It doesn't ask for your contacts, location,
+camera, microphone, photos or files. The app has <strong>no ads, analytics or tracking</strong>.</p></section>
+<section id="summary-table"><h2><span class="num">9.</span> Summary of what we keep</h2><div class="table-wrap"><table>
+<thead><tr><th>Information</th><th>Why</th><th>How long</th></tr></thead><tbody>
+<tr><td>Locked cloud backup copies (only your keys open them)</td><td>Restoring your vault on a new phone</td><td>Until you switch cloud backup off, replace the key or delete everything; unused backups after 2 years</td></tr>
+<tr><td>Scrambled receipt codes, install codes, check results</td><td>Confirming purchases, preventing refund abuse</td><td>While the purchase is active, then up to 12 months</td></tr>
+<tr><td>Family plan receipt code, invite codes, member IDs and join dates</td><td>Sharing a family plan</td><td>Invites: up to 7 days. Members: until removed or they leave</td></tr>
+<tr><td>Encrypted real email, private addresses, counts</td><td>Private email</td><td>Until you delete the address or account</td></tr>
+<tr><td>Your first name, safety contacts' names and encrypted emails</td><td>Safety contact emails</td><td>Until the contact is removed, opts out, or everything is deleted</td></tr>
+<tr><td>Email content</td><td>Passing emails on</td><td>Not kept: only in memory while forwarding</td></tr>
+<tr><td>Providers' technical request records</td><td>Running and securing the service</td><td>Up to 30 days</td></tr>
+</tbody></table></div></section>
+<section id="deleting"><h2><span class="num">10.</span> Deleting your information</h2><ul>
+<li><strong>Settings &rsaquo; Cloud backup: OFF</strong> deletes your cloud backup copies.</li>
+<li><strong>Delete all my passwords</strong> deletes everything on your phone, your cloud backups, safety
+contacts and private email account, 7 days after you ask (it can be cancelled until then).</li>
+<li>Deleting a private address removes it from our systems straight away.</li>
+<li>A safety contact can stop emails with the link in any email.</li></ul>
+<p>Full instructions, including what to do if you no longer have the app, are on our
+<a href="/safekeeping/delete-account/">delete your data page</a>.</p></section>
+<section id="sharing"><h2><span class="num">11.</span> Who we share information with</h2><p>We don't sell, rent or trade your information, and we
+don't share it for advertising. We use these service providers only to run Safekeeping:</p><ul>
+<li><strong>Google</strong> (Firebase, Google Cloud, Google Play): server, database, purchases
+(<a href="https://policies.google.com/privacy" rel="noopener">privacy policy</a>).</li>
+<li><strong>Cloudflare</strong> (Email Routing and Workers): receiving and screening email for private
+addresses (<a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">privacy policy</a>).</li>
+<li><strong>Amazon Web Services</strong> (Amazon SES): sending emails on to you, confirmation codes and safety
+contact emails (<a href="https://aws.amazon.com/privacy/" rel="noopener">privacy policy</a>).</li></ul>
+<p>Our server runs in the United States. We may disclose information if the law requires it, but that never
+includes your passwords in readable form.</p></section>
+<section id="security"><h2><span class="num">12.</span> Security</h2><p>All communication with our server uses HTTPS, our database can't be read
+directly from the internet, and server secrets are kept in Google Cloud Secret Manager. Because your passwords
+are encrypted on your phone with keys we never have, a break-in at our end would not reveal them.</p></section>
+<section id="rights"><h2><span class="num">13.</span> Your rights</h2><p>Depending on where you live (for example under the GDPR in the EU and UK, or state laws such as
+the California Consumer Privacy Act), you may have the right to access, correct, delete or receive a copy of
+the personal information we hold about you, to object to or restrict how it is used, and to complain to your
+local data protection authority. Contact us to use any of these rights. We answer within 30 days and will not
+treat you differently for using them. We do not sell or share personal information for cross-context
+behavioral advertising.</p><p>Where the GDPR applies, we rely on providing the service you asked
+for (backups, purchases, private email) and our legitimate interest in keeping it secure and preventing
+fraud.</p></section>
+<section id="children"><h2><span class="num">14.</span> Children</h2><p>Safekeeping is not directed at children under 13 (or the minimum age in
+your country), and we don't knowingly collect their information.</p></section>
+<section id="changes"><h2><span class="num">15.</span> Changes to this policy</h2><p>If we change this policy, we will update the date at the top of this page. For important changes we will also let you know in the app or on its Google Play listing before they take effect.</p></section>
+<section id="contact"><h2><span class="num">16.</span> Contact us</h2><p>Questions or requests about this policy or your data:</p><p class="contact-card"><strong>P1x3l P3rf3ct Studios</strong><br>Safekeeping<br><a href="mailto:support@safekeepingvault.app?subject=Safekeeping%20privacy">support@safekeepingvault.app</a></p></section>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap footer-grid">
+  <div><a class="brand" href="/"><svg class="logo" viewBox="0 0 7 7" aria-hidden="true" shape-rendering="crispEdges"><rect x="0" y="0" width="5" height="1"/><rect x="0" y="1" width="1" height="6"/><rect x="4" y="1" width="1" height="3"/><rect x="1" y="3" width="3" height="1"/><rect class="logo-dot" x="6" y="6" width="1" height="1"/></svg><span>P1x3l P3rf3ct Studios</span></a>
+  <p class="muted">Small, thoughtful apps made with care.</p></div>
+  <div><h2>Apps</h2><ul><li><a href="/gem-coloring/">Diamond Painting: Gem Coloring</a></li><li><a href="/taskquests/">TaskQuests Planner &amp; Randomizer</a></li><li><a href="/safekeeping/">Safekeeping</a></li><li><a href="/pattern-maker/">Diamond Painting Pattern Maker</a></li><li><a href="/the-traitor-word/">The Traitor Word</a></li></ul></div>
+  <div><h2>Contact</h2><ul><li><a href="mailto:misspixelatedwebdesign@gmail.com">misspixelatedwebdesign@gmail.com</a></li></ul></div>
+</div><div class="wrap copyright">&copy; 2026 P1x3l P3rf3ct Studios. All rights reserved.</div></footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
