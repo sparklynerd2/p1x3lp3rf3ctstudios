@@ -53,8 +53,8 @@ a:hover { text-decoration-thickness: 2px; }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none;
   font-family: var(--pixel); font-size: 18px; letter-spacing: .02em; }
-.logo { width: 26px; height: 26px; fill: var(--brand); flex: none; }
-.logo .logo-dot { fill: var(--brand-2); }
+.logo { width: 44px; height: 44px; flex: none; border-radius: 50%; }
+@media (prefers-color-scheme: dark) { .logo { box-shadow: 0 0 0 2px var(--line); } }
 .topnav { display: flex; gap: 20px; }
 .topnav a { color: var(--muted); text-decoration: none; font-weight: 500; }
 .topnav a:hover { color: var(--text); }
