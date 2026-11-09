@@ -107,6 +107,10 @@ a:hover { text-decoration-thickness: 2px; }
 .app-card > p { color: var(--muted); font-size: 16px; margin: 14px 0 10px; }
 .facts { list-style: none; padding: 0; margin: 0 0 18px; display: flex; flex-wrap: wrap; gap: 6px; }
 .facts li { font-size: 13px; font-weight: 500; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted); }
+.play-link { align-self: flex-start; margin: auto 0 14px; padding: 9px 16px; border-radius: 10px; font-weight: 600; font-size: 15px;
+  text-decoration: none; background: var(--a); color: var(--surface); }
+.play-link:hover { filter: brightness(1.08); }
+.play-link + .card-links { margin-top: 0; }
 .card-links { margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; padding-top: 14px; border-top: 1px dashed var(--line); }
 .card-links a { font-size: 14px; font-weight: 600; color: var(--a); text-decoration: none; padding: 6px 12px; border-radius: 10px;
   background: color-mix(in srgb, var(--a) 12%, transparent); }
