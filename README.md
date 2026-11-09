@@ -43,7 +43,7 @@ with a deletion request addressed to that app's support email, so no backend is 
 
 | App | Email |
 | --- | --- |
-| Studio, Gem Coloring, Pattern Maker, The Traitor Word | misspixelatedwebdesign@gmail.com |
+| Studio, Gem Coloring, Pattern Maker, The Traitor Word | support@p1x3lp3rf3ctstudios.com |
 | TaskQuests Planner & Randomizer | support@task-quests.com |
 | Safekeeping | support@safekeepingvault.app |
 
