@@ -35,6 +35,7 @@ html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: var(--bg); color: var(--text);
   font: 17px/1.65 var(--font); overflow-x: hidden;
+  font-feature-settings: "calt" 0; /* stop Inter turning the x in "1x3" into a multiplication sign */
 }
 img { max-width: 100%; height: auto; }
 a { color: var(--accent); text-underline-offset: 3px; }
