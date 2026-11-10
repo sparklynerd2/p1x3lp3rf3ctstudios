@@ -54,8 +54,7 @@ rebuilding it there, replace `public/gem-coloring/admin/` with the new
 
 | App | Email |
 | --- | --- |
-| Studio, Gem Coloring, Pattern Maker, The Traitor Word | support@p1x3lp3rf3ctstudios.com |
-| TaskQuests Planner & Randomizer | support@task-quests.com |
+| Studio, Gem Coloring, TaskQuests, Pattern Maker, The Traitor Word | support@p1x3lp3rf3ctstudios.com |
 | Safekeeping | support@safekeepingvault.app |
 
 To change one, search and replace across `public/`.
