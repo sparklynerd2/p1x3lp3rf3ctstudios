@@ -1,1 +1,18 @@
+# Cloudflare wrangler local state and secrets
 .wrangler/
+.dev.vars
+.dev.vars.*
+
+# Environment files
+.env
+.env.*
+
+# Keys and credentials
+*.pem
+*.key
+*.p12
+*-service-account*.json
+serviceAccountKey.json
+
+# Dependencies
+node_modules/
