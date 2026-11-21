@@ -20,7 +20,7 @@ public/
   pattern-maker/                  Diamond Painting Pattern Maker (offline, no deletion page)
     privacy/  terms/
   mega-puzzle-break/              Mega Puzzle Break (includes The Traitor Word)
-    privacy/  terms/
+    privacy/  terms/  delete-account/
   the-traitor-word/               old standalone Traitor Word pages (no longer linked)
     privacy/  terms/
 ```
