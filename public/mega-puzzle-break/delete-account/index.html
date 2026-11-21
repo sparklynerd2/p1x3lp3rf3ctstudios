@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Delete Account · Mega Puzzle Break</title>
+<title>Delete Account or Data · Mega Puzzle Break</title>
 <meta name="description" content="Request deletion of your Mega Puzzle Break account, synced progress and leaderboard entries.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="/assets/favicon.png" type="image/png">
@@ -23,10 +23,11 @@
 <nav class="subnav" aria-label="Mega Puzzle Break pages"><div class="wrap"><a class="subnav-app" href="/mega-puzzle-break/"><img src="/assets/icons/mega-puzzle-break.png" alt="" width="24" height="24">Mega Puzzle Break</a><div class="subnav-links"><a href="/mega-puzzle-break/">Overview</a><a href="/mega-puzzle-break/privacy/">Privacy</a><a href="/mega-puzzle-break/terms/">Terms</a><a href="/mega-puzzle-break/delete-account/" aria-current="page">Delete account</a></div></div></nav>
 <main id="main">
 <div class="doc-hero"><div class="wrap narrow"><p class="eyebrow">Mega Puzzle Break</p>
-<h1>Delete your account</h1>
+<h1>Delete your account or data</h1>
 <p class="updated">Applies to the Android app Mega Puzzle Break (com.megapuzzlebreak.app) &middot; Last updated: November 21, 2026</p>
 <div class="lead"><p>You can ask us to delete your Mega Puzzle Break account, the progress synced with it and your leaderboard
-entries at any time, even if you no longer have the app installed.</p></div></div></div>
+entries at any time, even if you no longer have the app installed. Or, if you'd like to keep your account, you can ask us
+to delete just your data.</p></div></div></div>
 <div class="wrap narrow doc">
 <section><h2>Never signed in or joined a leaderboard?</h2><p>Then there's nothing on our servers to delete. You can play
 Mega Puzzle Break without an account, and your progress lives only on your phone. Uninstall the app, or go to
@@ -38,6 +39,13 @@ signed in with Google, the Google email address, name and account ID linked to i
 <li>All your leaderboard entries (your nickname and best times).</li></ul>
 <p>Deletion is permanent and can't be undone. Data stored on your own device isn't affected: uninstall the app
 or clear its storage to remove it.</p></section>
+<section><h2>Delete your data but keep your account</h2><p>Choose <strong>Delete my data but keep my account</strong> in the form
+below. We delete your synced progress and all your leaderboard entries, but keep your account, so you can still sign
+in with Google and your nickname and leaderboard settings stay linked to it.</p>
+<p>The app syncs whatever is on your phone back to your account when you're signed in. If you want a fresh start,
+clear the app's data on each phone you've signed in on (Android Settings &rsaquo; Apps &rsaquo; Mega Puzzle Break
+&rsaquo; Storage &rsaquo; Clear data) before or soon after you send the request; otherwise your progress comes back
+the next time you open the app.</p></section>
 <section><h2>What we keep</h2><p>Nothing that identifies you, except anything we're legally required to keep.
 Your No ads purchase is recorded by Google Play under your Google account, not by us, so it isn't affected and
 still comes back if you reinstall. Information Google collects for ads is handled by Google; you can reset or
@@ -47,20 +55,22 @@ delete your advertising ID in your phone's settings.</p></section>
 that Google email address</strong>; that's how we confirm the request is yours.</li>
 <li>If you only joined the leaderboards without signing in, include your leaderboard nickname so we can find
 your entries.</li>
-<li>We delete your account and data and email you to confirm, within 30 days and usually much sooner.</li></ol></section>
+<li>We delete your account and data (or just your data, if that's what you chose) and email you to confirm, within 30 days and usually much sooner.</li></ol></section>
 <section id="request"><h2>Request deletion</h2>
 <form class="delete-form" data-email="support@p1x3lp3rf3ctstudios.com" data-app="Mega Puzzle Break" data-pkg="com.megapuzzlebreak.app" novalidate>
   <label for="ident">Your email address</label>
   <input id="ident" name="ident" type="email" autocomplete="email" required aria-describedby="ident-help">
   <p class="help" id="ident-help">If you signed in with Google, use that address and send the request from it.</p>
+  <label for="scope">What would you like deleted?</label>
+  <select id="scope" name="scope"><option value="account">Delete my account and all its data</option><option value="data">Delete my data but keep my account</option></select>
   <label for="method">How did you use your account?</label>
   <select id="method" name="method"><option>Signed in with Google</option><option>Leaderboards only (not signed in)</option></select>
   <label for="note">Leaderboard nickname, or anything else we should know <span class="muted">(optional)</span></label>
   <textarea id="note" name="note" rows="3"></textarea>
   <label class="check"><input type="checkbox" id="confirm" name="confirm" required>
-  <span>I understand deletion is permanent and my data can't be recovered.</span></label>
+  <span>I understand deletion is permanent and what I chose can't be recovered.</span></label>
   <p class="form-error" role="alert" hidden></p>
-  <button type="submit" class="btn">Create deletion email</button>
+  <button type="submit" class="btn">Create request email</button>
   <p class="help">This opens your email app with the request filled in. Nothing is sent until you press send.</p>
 </form>
 <p class="fallback">Prefer to write it yourself? Email <a href="mailto:support@p1x3lp3rf3ctstudios.com?subject=Delete%20my%20Mega%20Puzzle%20Break%20account">support@p1x3lp3rf3ctstudios.com</a> with the subject

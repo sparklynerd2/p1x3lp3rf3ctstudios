@@ -11,8 +11,12 @@ document.querySelectorAll('form.delete-form').forEach(function (form) {
     err.hidden = true;
     var app = form.dataset.app;
     var note = form.elements.note.value.trim();
+    var scope = form.elements.scope;
+    var dataOnly = scope && scope.value === 'data';
     var lines = [
-      'Please delete my ' + app + ' account and the data associated with it.',
+      dataOnly
+        ? 'Please delete the data associated with my ' + app + ' account, but keep my account.'
+        : 'Please delete my ' + app + ' account and the data associated with it.',
       '',
       'App: ' + app + ' (' + form.dataset.pkg + ')',
       'Email / identifier: ' + ident,
@@ -22,7 +26,7 @@ document.querySelectorAll('form.delete-form').forEach(function (form) {
       note ? '' : null,
       'I understand that deletion is permanent and cannot be undone.'
     ].filter(function (l) { return l !== null; });
-    var subject = 'Account deletion request - ' + app;
+    var subject = (dataOnly ? 'Data deletion request - ' : 'Account deletion request - ') + app;
     window.location.href = 'mailto:' + form.dataset.email +
       '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
   });
