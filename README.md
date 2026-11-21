@@ -9,6 +9,7 @@ public/
   index.html                      home page (all apps)
   404.html
   _headers                        security headers (Cloudflare Pages)
+  _redirects                      old /mega-game-break/ links → /mega-puzzle-break/
   assets/                         styles.css, site.js, favicon, app icons
   gem-coloring/                   Diamond Painting: Gem Coloring
     privacy/  terms/  delete-account/
@@ -18,7 +19,9 @@ public/
     privacy/  terms/  delete-account/
   pattern-maker/                  Diamond Painting Pattern Maker (offline, no deletion page)
     privacy/  terms/
-  the-traitor-word/               The Traitor Word (offline, no deletion page)
+  mega-puzzle-break/              Mega Puzzle Break (includes The Traitor Word)
+    privacy/  terms/
+  the-traitor-word/               old standalone Traitor Word pages (no longer linked)
     privacy/  terms/
 ```
 
